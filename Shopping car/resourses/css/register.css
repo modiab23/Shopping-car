@@ -1,0 +1,31 @@
+.register-parent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 60px 0;
+}
+.register-son{
+    text-align: center;
+    background-color: #fff;
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 10%);
+    padding: 20px;
+    border-radius: 5px;
+}
+.register-son span{
+    display: block;
+    margin: 30px 20px auto;
+    color: var(--black);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.register-son a{
+    margin-left: 8px;
+}
+.register-son h2{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--black);
+}
+.register-image img{
+    width: 100%;
+}

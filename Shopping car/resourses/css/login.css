@@ -1,0 +1,55 @@
+:root{
+    --yellow:#f9d806;
+    --light-yellow:#ffee80;
+    --black:#130f40;
+    --light-color:#666;
+}
+.login-parent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 60px 0;
+}
+.login-son{
+    text-align: center;
+    background-color: #fff;
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 10%);
+    padding: 20px;
+    border-radius: 5px;
+}
+.form-contact{
+    margin: 10px 0 20px 0;
+}
+.form-contact input{
+    width: 320px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 2px var(--light-yellow);
+    outline: none;
+    padding-left: 8px;
+    margin:5px 0 ;
+}
+.login-son h2{
+   text-transform: capitalize;
+   font-weight: bold;
+   color: var(--black);
+}
+.login-son h4{
+   text-transform: capitalize;
+   color:var(--black) ;
+   margin: 12px 0;
+}
+.login-son a:last-child{
+    margin-left: 8px;
+}
+.login-son span{
+    display: block;
+    margin: 35px 0;
+    color: var(--black);
+    font-weight: bold;
+}
+.login-image img{
+    width:100% ;
+}
+
+/* login end */

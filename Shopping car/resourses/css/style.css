@@ -1,0 +1,394 @@
+/*General style*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;700&family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+    --yellow:#f9d806;
+    --light-yellow:#ffee80;
+    --black:#130f40;
+    --light-color:#666;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.line-end{
+    width:370%;
+   color: var(--black);
+   height: 3px;
+}
+/********************************************/
+/* common style    المتكرره */
+.container{
+    width: 80%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.btn{
+    padding: 8px 30px;
+    color: var(--black);
+    background-color: var(--light-yellow);
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: var(--yellow);
+}
+.pd-Y{
+    padding: 40px 0;
+}
+.master{
+    text-align: center; 
+}
+.master .title{
+    color: var(--black);
+    text-transform: capitalize;
+    font-size: 35px;
+    margin: 0;
+}
+.master .line{
+   display:block;
+   content: "";
+   margin-left: 48%;
+   width: 70px;
+   height: 3px;
+   background-color: var(--yellow);
+   transition: 0.5s;
+}
+.master:hover .line{
+    width: 120px;
+}
+/********************************************/
+
+/* section header start */
+#header{
+    padding: 10px 0;
+}
+.header-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-parent .logo{
+    width: 20%;
+}
+.header-parent .logo a{
+    color: var(--black);
+     font-size: 20px;
+}
+.header-parent .logo span{
+    color: var(--yellow);
+    font-size: 30px;
+}
+.header-parent nav{
+  width: 40%;
+}
+.header-parent nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 5px;
+}
+.header-parent nav ul li a{
+   color: var(--black);
+   transition: 0.4s;
+}
+.header-parent nav ul li a:hover{
+    color: var(--yellow);
+}
+.header-parent .header-login{
+    width: 20%;
+}
+
+
+/* section header end */
+
+/*  section home start */
+.home-parent{
+    display: contents;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.home-parent .home-title h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    color: var(--black);
+    
+}
+
+/*  section home end */
+
+/* section about start */
+#about{
+    margin: 40px 0 0 0;
+    background-color:rgb(223, 222, 222);
+}
+.about-parent{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-gap: 20px;
+   padding: 30px 0 ;
+   position: relative;
+}
+.about-son{
+   text-align: center;
+   display: flex;
+   background-color: #fff;
+   box-shadow: 2px 2px 10px rgb(0 0 0 / 10%);
+   padding: 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.4s;
+}
+.about-son:hover{
+    background-color: var(--black);
+}
+/*.ltr-effect{
+    position: relative;
+}
+.ltr-effect::after{
+    position: absolute;
+    content: "";
+    width:0;
+    top: 0;
+    left: 0;
+    height: 0;
+    background-color: var(--black); 
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.ltr-effect:hover::after{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}*/
+
+.about-son:hover .about-item span{
+    color: #fff;
+}
+.about-son:hover .about-item h3{
+    color: #fff;
+}
+.about-son i{
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--black);
+}
+.about-item{
+    margin-left: 10px;
+    text-align:start;
+}
+.about-item span{
+    color: var(--yellow);
+    font-size: 20px;
+    font-weight: bold;
+}
+.about-item h3{
+   color: var(--black);
+   text-transform: capitalize;
+   font-size: 15px;
+   font-weight: bold;
+}
+/* section about end */
+
+/* section cars start */
+#cars{
+    padding-bottom: 60px;
+    position: relative;
+}
+.car-son{
+    text-align: center;
+}
+.car-son img{
+    width: 100%;
+    opacity: 0.5;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+.cars-slider .car-parent .swiper-slide-active img{
+   opacity: 1;
+   transform: scale(1);
+}
+.content-list{
+    transform: scale(0);
+}
+.cars-slider .car-parent .swiper-slide-active .content-list{
+    transform: scale(1);
+}
+
+.car-son h3{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--black);
+}
+.car-son label{
+   margin: 8px 5px;
+}
+.car-son span.price{
+   font-size: 20px;
+   font-weight: bold;
+   color: var(--yellow);
+}
+.car-item{
+    position: relative;
+}
+.car-son .car-item li{
+    display: inline-block; 
+    margin-left: 15px;   
+}
+.car-item span.revert{
+   position: absolute;
+   display: block;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: var(--yellow);
+   margin-left: -14px;
+   top: 8px;
+
+}
+
+.car-son h4{
+    font-weight: bold;
+    color: var(--black);
+}
+
+/* section cars end */
+
+/* section services start */
+#services{
+    padding-bottom: 60px;
+}
+.service-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.service-son{
+   background-color: #fff;
+   box-shadow:2px 2px 10px rgb(0 0 0 / 10%);
+   padding: 15px;
+   text-align: center;
+   cursor: pointer;
+   transition: 0.4s;
+}
+.service-son:hover{
+    background-color: var(--black);
+}
+.service-son:hover.service-son i{
+    color: #fff;
+}
+.service-son:hover.service-son h3{
+    color: #fff;
+}
+.service-son i{
+   color: var(--black);
+   background-color: var(--yellow);
+   padding: 15px;
+   border-radius: 50%;
+   margin-bottom: 5px;
+   transition: 0.5s;
+}
+.service-son h3{
+   text-transform: capitalize;
+   color: var(--black);
+   font-size: 22px;
+   font-weight: bold;
+   transition: 0.5s;
+}
+.service-son p{
+   color: var(--light-color);
+}
+/* section services end */
+
+/* section featured start */
+#featured{
+    padding-bottom: 60px;
+    position: relative;
+}
+.featured-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px ;
+}
+.featured-son{
+    text-align: center;
+    background-color: #fff;
+    box-shadow:2px 2px 10px rgb(0 0 0 / 10%);
+    height: 300px;
+    margin: 10px 0;
+    padding: 20px;
+}
+.featured-son img{
+   width: 60%;
+}
+.featured-son h3{
+   color:var(--black) ;
+   font-size: 22px;
+   font-weight: bold;
+   text-transform: capitalize;
+}
+.featured-son h4{
+    font-size: medium;
+    font-weight: bold;
+}
+.featured-son .stars i{
+    color: var(--yellow);
+}
+/* section featured end */
+
+/* section footer start */
+#footer{
+   height: 400px;
+   background-color: var(--light-yellow);
+}
+.footer-parent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding: 40px 0;
+}
+.footer-son h3{
+   color: var(--black);
+   text-transform: capitalize;
+   font-size: 25px;
+   font-weight: bold;
+}
+.footer-son a{
+    display: block;
+    color: var(--light-color);
+    margin: 15px 0;
+    transition: 0.4s;
+}
+.footer-son a:hover{
+    color: var(--black);
+}
+.footer-son i{
+    margin-right: 5px;
+    color: var(--black);
+}
+
+.created{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--black);
+    font-size: 25px;
+    font-weight: bold;
+}
+/* section footer end */
+
+
